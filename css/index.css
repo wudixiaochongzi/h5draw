@@ -1,0 +1,147 @@
+body{
+	-moz-user-select: none; /*火狐*/
+	-webkit-user-select: none; /*webkit浏览器*/
+	-ms-user-select: none; /*IE10*/
+	-khtml-user-select: none; /*早期浏览器*/
+	user-select: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+button{
+	width: 40px;
+	height: 40px;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	box-sizing:border-box;
+	padding: 0;
+}
+.out{
+	height: 100%;
+	margin-left: 140px;
+}
+.drawbox{
+	float: right;
+	width: 100%;
+	height: 100%;
+	background: #666;
+	padding: 10px;
+	box-sizing:border-box;
+}
+.draw{
+	position: relative;
+	height: 100%;
+}
+canvas{
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+.copy{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+.opation{
+	width: 140px;
+	height: 100%;
+	background: #ccc;
+	margin-left: -140px;
+	box-sizing:border-box;
+	padding: 22px 8px 22px 10px;
+}
+.opation section{
+	margin-bottom: 12px;
+	text-align: center;
+	height: 42px;
+}
+section.typetools{
+	height: auto;
+}
+/*颜色按钮样式*/
+.fillcolorbox,.strokecolorbox{
+	position: relative;
+}
+input[type="color"]{
+	background: none;
+	border: none;
+	width: 36px;
+	height: 36px;
+	outline: none;
+	cursor: pointer;
+	position: absolute;
+	right: 4px;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+input[type="checkbox"]{
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+	top: 0;
+	margin: auto 0;
+}
+.fillcolorbox span,.strokecolorbox span{
+	display: block;
+	line-height: 40px;
+}
+
+/*线框宽度*/
+.linewidth{
+	height: 30px;
+	font-size: 14px;
+	outline: none;
+}
+
+/*绘制形状的按钮样式*/
+#line{
+	background-image: url(../images/line.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 32px 32px; 
+	background-color:#fff;
+	border:1px solid #666
+}
+#rect{
+	background-image: url(../images/rect.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px 30px; 
+}
+#arc{
+	background-image: url(../images/arc.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px 30px; 
+}
+#poly{
+	background-image: url(../images/poly5.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px 30px; 
+}
+#jiao{
+	background-image: url(../images/jiao5.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 34px 34px; 
+}
+#roundrect{
+	background-image: url(../images/roundrect.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 34px 34px;
+}

@@ -1,0 +1,27 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+form,
+input,
+textarea,
+p,
+dl,
+dd {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  -webkit-tab-heighlight: rgba(0,0,0,0); /* 去除手机端点击时候高亮背景 */
+}
+img {
+  border: 0;
+}

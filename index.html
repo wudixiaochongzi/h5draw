@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>H5画板</title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="fonts/iconfont.css">
+</head>
+<body>
+	<div class="out">
+		<div class="drawbox">
+			<div class="draw">
+				
+			</div>
+		</div>	
+		<div class="opation">
+		<!-- 操作工具 -->
+			<section>
+				<button class="iconfont create" title="新建画布">&#xe60b;</button>
+				<button class="iconfont download" title="保存到本地">&#xe60a;</button>
+			</section>		
+			<section>
+				<button class="iconfont goback" title="撤销">&#xe601;</button>
+				<button class="iconfont regain" title="恢复">&#xe608;</button>
+			</section>
+			<hr>
+		<!-- 样式工具 -->
+			<section class="fillcolorbox">
+				<input type="checkbox">
+				<input type="color" value="#FF8040">
+				<span>填充</span>
+			</section>
+			<section class="strokecolorbox">
+				<input type="checkbox" checked=true>
+				<input type="color" value="#0080FF">
+				<span>描边</span>
+			</section>
+			<section>
+				<span>线宽:</span>
+				<select class="linewidth">
+					<option >1</option>
+					<option >2</option>
+					<option >3</option>
+					<option >4</option>
+					<option >5</option>
+					<option >6</option>
+					<option >7</option>
+					<option >8</option>
+					<option >9</option>
+					<option >11</option>
+					<option >12</option>
+					<option >13</option>
+					<option >14</option>
+					<option >15</option>
+					<option >16</option>
+				</select>
+			</section>
+			<hr>
+		<!-- 铅笔橡皮工具 -->
+			<section class="functools">
+				<button flag=0 class="iconfont pencil" title="铅笔工具">&#xe602;</button>
+				<button class="iconfont" title="橡皮擦" style="font-size:28px">&#xe610;</button>
+			</section>
+			<hr>
+		<!-- 形状工具 -->
+			<section class="typetools">
+				<button id="line" title="直线"></button>
+				<button id="rect" title="矩形"></button>
+				<button id="arc" title="圆"></button>
+				<button id="poly" title="多边形"></button>
+				<button id="jiao" title="星形"></button>
+				<button id="roundrect" title="圆角矩形"></button>
+			</section>
+			<hr>
+		</div>
+	</div>
+</body>
+<script src="js/palette.js"></script>
+<script src="js/index.js"></script>
+</html>
